@@ -1,9 +1,26 @@
 import React from 'react'
+import ArrowFunction from './ArrowFunction';
 
-function ArrowFunction() {
+function ArrowFunctionComponent() {
+  function NormaFunction(x){
+    return (
+        <h1>Hello {x}</h1>
+    );
+  }
+
+//   const arrowFunction = () => {
+//     return (
+//     <>
+//     <h1>Iam in arrow function</h1>
+//     </>
+//     );
+//   }
+
   return (
-    <div>ArrowFunction</div>
+    NormaFunction('Armand')
+    // {/* {arrowFunction()} */}
   )
+
 }
 
-export default ArrowFunction
+export default ArrowFunctionComponent
